@@ -1,0 +1,7 @@
+-- Replace this URL with the website you want to open
+local url = "https://www.youtube.com/@repexsosilly"
+
+-- Function to open the URL in the default web browser
+function open_url(url)
+    if os.execute("start " .. url) then  -- For Windows
+        return
